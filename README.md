@@ -14,12 +14,14 @@ It uses PID control to regulate the flow rate of liquid across multiple pumps in
 - 📡 UART-based data logging (for debugging or visualization)
 
 ---
+## 🧠 Developed by
 
-## 📷 System Overview
-
-<img src="docs/system_diagram.png" width="500" />
+**Hüseyin Bertan Acar**  
+📧 bertan_acr@hotmail.com  
+📍 Izmir, Turkey
 
 ---
 
-## 📁 File Structure
+## 📜 License
 
+This project is licensed under the MIT License.
