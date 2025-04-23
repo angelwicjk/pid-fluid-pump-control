@@ -1,27 +1,66 @@
 # 🧪 PID Fluid Pump Control System
 
-This project is an Arduino-based closed-loop fluid control system.  
-It uses PID control to regulate the flow rate of liquid across multiple pumps in real-time.
+> A closed-loop Arduino-based system using PID control for multi-pump liquid dispensing and regulation.  
+> Developed for precise flow rate management in real-time applications.
 
 ---
 
 ## 🚀 Features
 
-- 🔧 PID control implementation for stable fluid management
-- 🌡️ Real-time flow rate feedback via external sensor
-- 💧 Individual valve & pump control for up to 4 pumps
-- 🧠 Adaptive control logic with filter and smoothing
-- 📡 UART-based data logging (for debugging or visualization)
+- 🔧 PID control loop with dynamic tuning
+- 🌡️ Real-time flow rate feedback via analog sensors
+- 💧 Supports up to 4 pumps and solenoid valves
+- 🧠 Integral gain adaptation and smoothing filter logic
+- 📡 UART-based serial communication for data monitoring
+- 🛠️ Yalın mimari ile yazılmış doğrudan register seviyesinde kontrol
 
 ---
-## 🧠 Developed by
+
+## ⚙️ How It Works
+
+The system reads real-time flow values and adjusts pump output using a PID controller.  
+Depending on user input (via Serial), it activates a specific pump and its corresponding valve.  
+The output voltage is carefully filtered and smoothed to avoid sudden spikes or oscillations.
+
+### Key Technical Highlights:
+- Integral term with saturation handling
+- Derivative filtering using a configurable low-pass filter
+- Output rate limiting (voltage change clamp)
+- Modular control logic for multiple pump paths
+
+---
+
+## 🔌 Hardware Setup
+
+| Component             | Description                            |
+|----------------------|----------------------------------------|
+| Arduino Mega         | Main MCU platform                      |
+| Flow Sensor          | Analog flow input (scaled with offset) |
+| Solenoid Valves (x4) | Controlled via digital pins            |
+| Custom Pump Driver   | Voltage-controlled via I2C             |
+| Power Supply         | 12V for pumps & valves                 |
+
+
+Use any UART logger or external Python script for real-time visualization.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** – free for personal or academic use.  
+Feel free to fork, modify, or contribute.
+
+---
+
+## 👤 Author
 
 **Hüseyin Bertan Acar**  
 📧 bertan_acr@hotmail.com  
-📍 Izmir, Turkey
+📍 İzmir / Turkey  
+🔗 [LinkedIn](https://linkedin.com/in/huseyinbertanacar)
 
 ---
 
-## 📜 License
+> *“Sürdürülebilir, test edilebilir ve yalın mimariye sahip sistemler geliştirmeyi hedefliyorum.”*
 
-This project is licensed under the MIT License.
+
