@@ -61,6 +61,6 @@ Feel free to fork, modify, or contribute.
 
 ---
 
-> *“Sürdürülebilir, test edilebilir ve yalın mimariye sahip sistemler geliştirmeyi hedefliyorum.”*
+> “My goal is to develop maintainable, testable, and robust embedded systems.”
 
 
