@@ -57,7 +57,7 @@ Feel free to fork, modify, or contribute.
 **Hüseyin Bertan Acar**  
 📧 bertan_acr@hotmail.com  
 📍 İzmir / Turkey  
-🔗 [LinkedIn](https://linkedin.com/in/huseyinbertanacar)
+🔗 [LinkedIn](https://www.linkedin.com/in/huseyin-bertan-acar/)
 
 ---
 
